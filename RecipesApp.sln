@@ -11,15 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{C64C1176-9E1E-48AA-BDEF-01EE19A68F4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipesApp.Domain", "src\Core\RecipesApp.Domain\RecipesApp.Domain.csproj", "{F3EB38E1-7898-4DEA-B79A-3E3A1C635851}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipesApp.Domain", "src\Core\RecipesApp.Domain\RecipesApp.Domain.csproj", "{F3EB38E1-7898-4DEA-B79A-3E3A1C635851}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipesApp.Application", "src\Core\RecipesApp.Application\RecipesApp.Application.csproj", "{62C7A84F-DDAA-49AE-AA14-8DF55B291834}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipesApp.Application", "src\Core\RecipesApp.Application\RecipesApp.Application.csproj", "{62C7A84F-DDAA-49AE-AA14-8DF55B291834}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipesApp.Infrastructure", "src\Infrastructure\RecipesApp.Infrastructure\RecipesApp.Infrastructure.csproj", "{761449C1-B7C5-446A-8481-6BADA15AAC36}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipesApp.Infrastructure", "src\Infrastructure\RecipesApp.Infrastructure\RecipesApp.Infrastructure.csproj", "{761449C1-B7C5-446A-8481-6BADA15AAC36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipesApp.Persistence", "src\Infrastructure\RecipesApp.Persistence\RecipesApp.Persistence.csproj", "{3AF2E93E-854E-44A2-BEFD-9EF1BFA5C80A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipesApp.Persistence", "src\Infrastructure\RecipesApp.Persistence\RecipesApp.Persistence.csproj", "{3AF2E93E-854E-44A2-BEFD-9EF1BFA5C80A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipesApp.API", "src\Presentation\RecipesApp.API\RecipesApp.API.csproj", "{9DFC488D-E525-48F1-B0A3-B823BDDDD854}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipesApp.API", "src\Presentation\RecipesApp.API\RecipesApp.API.csproj", "{9DFC488D-E525-48F1-B0A3-B823BDDDD854}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
