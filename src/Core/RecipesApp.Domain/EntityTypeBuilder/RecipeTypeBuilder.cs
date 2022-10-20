@@ -17,6 +17,9 @@ namespace RecipesApp.Domain.EntityTypeBuilder
                  .IsRequired()
                  .HasColumnType("nvarchar")
                  .HasMaxLength(256);
+            builder.HasOne(x => x.Direction)
+                .WithOne(x => x.Recipe)
+                .HasForeignKey<Recipe>(x => x.DirectionId);
         }
     }
 }
