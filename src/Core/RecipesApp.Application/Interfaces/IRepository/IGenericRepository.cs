@@ -12,7 +12,7 @@ namespace RecipesApp.Application.Interfaces.IRepository
     {
         Task<TEntity> GetByIdAsync(int id);
 
-        Task<IQueryable<TEntity>> GetAllAsync();
+        IQueryable<TEntity> GetAllAsync();
 
         IQueryable<TEntity> Where(Expression<Func<TEntity, bool>> expression);
 

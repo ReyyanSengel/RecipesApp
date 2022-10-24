@@ -1,4 +1,7 @@
-﻿using RecipesApp.Domain.Common;
+﻿using Azure;
+using RecipesApp.Application.DTOs.EntityDTOs;
+using RecipesApp.Application.DTOs.ResponseDTOs;
+using RecipesApp.Domain.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,20 +15,20 @@ namespace RecipesApp.Application.Interfaces.IService
     {
         Task<TEntity> GetByIdAsync(int id);
 
-        Task<IQueryable<TEntity>> GetAllAsync();
+        IQueryable<TEntity> GetAllAsync();
 
         IQueryable<TEntity> Where(Expression<Func<TEntity, bool>> expression);
 
         Task<bool> AnyAsync(Expression<Func<TEntity, bool>> expression);
 
-        Task AddAsync(TEntity entity);
+        Task<TEntity> AddAsync(TEntity tEntity);
 
-        Task AddRangeAsync(IQueryable<TEntity> entities);
+        Task<IQueryable<TEntity>> AddRangeAsync(IQueryable<TEntity> tEntity);
 
-        void Update(TEntity entity);
+        Task Update(TEntity tEntity);
 
-        void Remove(TEntity entity);
+        Task Remove(TEntity tEntity);
 
-        void RemoveRange(IQueryable<TEntity> entities);
+        Task RemoveRange(IQueryable<TEntity> tEntity);
     }
 }
