@@ -11,7 +11,7 @@ namespace RecipesApp.Application
 {
     public static class ServiceRegistration
     {
-        public static void AddApplicationRegistration(this IServiceCollection services)
+        public static void AddApplicationServices(this IServiceCollection services)
         {
             services.AddAutoMapper(typeof(MapProfile));
             services.AddScoped(typeof(NotFoundFilter<>));

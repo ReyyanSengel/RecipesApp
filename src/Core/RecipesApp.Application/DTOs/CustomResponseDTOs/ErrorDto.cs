@@ -4,28 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipesApp.Application.DTOs.ResponseDTOs
+namespace RecipesApp.Application.DTOs.CustomResponseDTOs
 {
     public class ErrorDto
     {
-        public List<String> Errors { get; set; }
+        public List<String> Errors { get; set; } = new List<String>();
         public bool IsShow { get; set; }
 
-        public ErrorDto()
+
+        public ErrorDto(string error, bool isShow)
         {
-            Errors = new List<String>();
+            Errors.Add(error);
+            IsShow = isShow;
         }
 
-        public ErrorDto(string errors, bool ısShow)
-        {
-            Errors.Add(errors);
-            IsShow = true;
-        }
-
-        public ErrorDto(List<string> errors, bool ısShow)
+        public ErrorDto(List<string> errors, bool isShow)
         {
             Errors = errors;
-            IsShow = ısShow;
+            IsShow = isShow;
         }
     }
 }
+

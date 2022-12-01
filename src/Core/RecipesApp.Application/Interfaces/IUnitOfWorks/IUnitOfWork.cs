@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipesApp.Application.Interfaces.IUnitOfWork
+namespace RecipesApp.Application.Interfaces.IUnitOfWorks
 {
     public interface IUnitOfWork
     {
-        Task CommitAync();
+        Task CommitAsync();
         void Commit();
     }
 }

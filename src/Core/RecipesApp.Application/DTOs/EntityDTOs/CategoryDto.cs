@@ -7,9 +7,12 @@ using System.Threading.Tasks;
 
 namespace RecipesApp.Application.DTOs.EntityDTOs
 {
-    public class CategoryDto : BaseDto
+    public class CategoryDto
     {
+        public int CategoryId { get; set; }
         public string CategoryName { get; set; }
-        public List<RecipeDto> Recipes { get; set; }
     }
+
+
+
 }

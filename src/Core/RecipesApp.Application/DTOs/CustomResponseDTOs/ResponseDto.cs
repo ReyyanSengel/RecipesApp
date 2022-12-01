@@ -5,16 +5,16 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace RecipesApp.Application.DTOs.ResponseDTOs
+namespace RecipesApp.Application.DTOs.CustomResponseDTOs
 {
     public class ResponseDto<T> where T : class
     {
-        public T Data { get; private set; }
-        public int StatusCode { get; private set; }
+        public T Data { get;  set; }
+        public int StatusCode { get; set; }
 
         [JsonIgnore]
-        public bool IsSuccessful { get; private set; }
-        public ErrorDto Error { get; private set; }
+        public bool IsSuccessful { get;  set; }
+        public ErrorDto Error { get;  set; }
 
 
         public static ResponseDto<T> Success(T data, int statusCode)

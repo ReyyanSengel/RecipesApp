@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
-using RecipesApp.Application.DTOs.ResponseDTOs;
+using RecipesApp.Application.DTOs.CustomResponseDTOs;
 using RecipesApp.Application.Interfaces.IRepository;
 using RecipesApp.Application.Interfaces.IService;
 using RecipesApp.Domain.Common;

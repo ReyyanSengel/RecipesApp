@@ -3,12 +3,18 @@
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <!--<Nullable>enable</Nullable>-->
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.10" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\Core\RecipesApp.Application\RecipesApp.Application.csproj" />
-    <ProjectReference Include="..\..\Presentation\RecipesApp.API\RecipesApp.API.csproj" />
+    <ProjectReference Include="..\RecipesApp.Persistence\RecipesApp.Persistence.csproj" />
   </ItemGroup>
 
 </Project>

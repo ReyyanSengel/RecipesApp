@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
+    <!--<Nullable>enable</Nullable>-->
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Core\RecipesApp.Application\RecipesApp.Application.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\RecipesApp.Infrastructure\RecipesApp.Infrastructure.csproj" />
     <ProjectReference Include="..\..\Infrastructure\RecipesApp.Persistence\RecipesApp.Persistence.csproj" />
   </ItemGroup>
 

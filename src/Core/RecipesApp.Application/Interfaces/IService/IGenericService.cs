@@ -1,6 +1,6 @@
 ﻿using Azure;
 using RecipesApp.Application.DTOs.EntityDTOs;
-using RecipesApp.Application.DTOs.ResponseDTOs;
+using RecipesApp.Application.DTOs.CustomResponseDTOs;
 using RecipesApp.Domain.Common;
 using System;
 using System.Collections.Generic;
@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace RecipesApp.Application.Interfaces.IService
 {
-    public interface IGenericService<TEntity> where TEntity : BaseEntity
+    public interface IGenericService<TEntity> where TEntity : class
     {
         Task<TEntity> GetByIdAsync(int id);
 

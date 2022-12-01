@@ -8,13 +8,14 @@ using System.Threading.Tasks;
 
 namespace RecipesApp.Application.Interfaces.IRepository
 {
-    public interface IGenericRepository<TEntity> where TEntity : BaseEntity
+    public interface IGenericRepository<TEntity> where TEntity : class
     {
         Task<TEntity> GetByIdAsync(int id);
 
         IQueryable<TEntity> GetAllAsync();
 
         IQueryable<TEntity> Where(Expression<Func<TEntity, bool>> expression);
+        Task<TEntity> SingleOrDefaultAsync(Expression<Func<TEntity, bool>> expression);
 
         Task<bool> AnyAsync(Expression<Func<TEntity, bool>> expression);
 

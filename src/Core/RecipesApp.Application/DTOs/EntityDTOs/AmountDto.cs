@@ -7,10 +7,13 @@ using System.Threading.Tasks;
 
 namespace RecipesApp.Application.DTOs.EntityDTOs
 {
-    public class AmountDto : BaseDto
+    public class AmountDto
     {
+        public int AmountId { get; set; }
         public int Quantity { get; set; }
         public string Unit { get; set; }
-        public List<IngredientDto> Ingredients { get; set; }
     }
+
+
+
 }

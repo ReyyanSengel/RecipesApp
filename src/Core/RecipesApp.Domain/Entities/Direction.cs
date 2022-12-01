@@ -10,7 +10,7 @@ namespace RecipesApp.Domain.Entities
     public class Direction : BaseEntity
     {
         public string Step { get; set; }
-        public int RecipeId { get; set; }
         public Recipe Recipe { get; set; }
+        
     }
 }

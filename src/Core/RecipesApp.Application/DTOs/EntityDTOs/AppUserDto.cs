@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace RecipesApp.Application.DTOs.EntityDTOs
 {
-    public class BaseDto
+    public class AppUserDto
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
+        public string UserName { get; set; }
+        public string Email { get; set; }
     }
 }

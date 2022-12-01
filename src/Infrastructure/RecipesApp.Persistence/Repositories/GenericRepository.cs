@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace RecipesApp.Persistence.Repositories
 {
-    public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : BaseEntity
+    public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class
     {
         protected readonly RecipeAppDbContext _context;
 
@@ -66,5 +66,11 @@ namespace RecipesApp.Persistence.Repositories
         {
             return _dbSet.Where(expression);
         }
+
+        public async Task<TEntity> SingleOrDefaultAsync(Expression<Func<TEntity, bool>> expression)
+        {
+            return await _dbSet.SingleOrDefaultAsync(expression);
+        }
+
     }
 }

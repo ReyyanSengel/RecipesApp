@@ -1,4 +1,4 @@
-﻿using RecipesApp.Application.Interfaces.IUnitOfWork;
+﻿using RecipesApp.Application.Interfaces.IUnitOfWorks;
 using RecipesApp.Persistence.Context;
 using System;
 using System.Collections.Generic;
@@ -22,7 +22,7 @@ namespace RecipesApp.Persistence.UnitOfWorks
             _context.SaveChanges();
         }
 
-        public async Task CommitAync()
+        public async Task CommitAsync()
         {
             await _context.SaveChangesAsync();
         }
