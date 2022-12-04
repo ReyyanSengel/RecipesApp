@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.JsonWebTokens;
 using Microsoft.IdentityModel.Tokens;
-using RecipesApp.Application.DTOs;
+using RecipesApp.Application.DTOs.TokenDtos;
 using RecipesApp.Application.Interfaces.IService;
 using RecipesApp.Application.SystemModels;
 using RecipesApp.Domain.Entities;

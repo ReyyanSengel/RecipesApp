@@ -1,5 +1,5 @@
-﻿using RecipesApp.Application.DTOs;
-using RecipesApp.Application.DTOs.CustomResponseDTOs;
+﻿using RecipesApp.Application.DTOs.CustomResponseDTOs;
+using RecipesApp.Application.DTOs.TokenDtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using RecipesApp.Application.DTOs;
+using RecipesApp.Application.DTOs.TokenDtos;
 using RecipesApp.Application.Interfaces.IService;
 
 namespace RecipesApp.API.Controllers

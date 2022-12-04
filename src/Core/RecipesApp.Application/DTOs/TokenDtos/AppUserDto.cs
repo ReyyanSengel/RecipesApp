@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipesApp.Application.DTOs
+namespace RecipesApp.Application.DTOs.TokenDtos
 {
-    public class LoginDto
+    public class AppUserDto
     {
+        public string Id { get; set; }
+        public string UserName { get; set; }
         public string Email { get; set; }
-        public string Password { get; set; }
     }
 }

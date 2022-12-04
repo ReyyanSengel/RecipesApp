@@ -40,27 +40,20 @@ namespace RecipesApp.API.Controllers
         public async Task<IActionResult> GetById(int id)
         {
             var recipe = await _recipeService.GetRecipeById(id);
-            var recipeDto=_mapper.Map<RecipeDto>(recipe);
-            return Ok(ResponseDto<RecipeDto>.Success(recipeDto,200));
+            var recipeDto = _mapper.Map<RecipeDto>(recipe);
+            return Ok(ResponseDto<RecipeDto>.Success(recipeDto, 200));
         }
 
-        //[HttpPost]
-        //public async Task<IActionResult> SaveRecipe(RecipeDataDto recipeDataDto)
-        //{
-        //    var result = await _recipeService.AddRecipe(recipeDataDto);
-        //    var addrecipeDto = _mapper.Map<RecipeDto>(result);
-        //    return Created(" ",addrecipeDto);
-        //}
+        [HttpPost]
+        public async Task<IActionResult> RecipeAdd(AddRecipeDto addRecipeDto)
+        {
+            var recipe = await _recipeService.AddAsync(_mapper.Map<Recipe>(addRecipeDto));
+            var recipeDto = _mapper.Map<AddRecipeDto>(recipe);
+            return Ok(ResponseDto<AddRecipeDto>.Success(recipeDto, 200));
+        }
 
 
-        //[HttpPut]
-        //public async Task<IActionResult> UpdateRecipe(RecipeDto recipeDto)
-        //{
-        //    var x = _mapper.Map<Recipe>(recipeDto);
-        //    await _recipeService.Update(_mapper.Map<Recipe>(recipeDto));
 
-        //    return Ok(ResponseDto<NoContentDto>.Success(204));
-        //}
 
 
 

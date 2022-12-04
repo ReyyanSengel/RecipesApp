@@ -17,7 +17,7 @@ namespace RecipesApp.Domain.EntityTypeBuilder
                  .IsRequired()
                  .HasColumnType("nvarchar")
                  .HasMaxLength(256);
-            
         }
     }
 }
+            

@@ -1,4 +1,4 @@
-﻿using RecipesApp.Application.DTOs;
+﻿using RecipesApp.Application.DTOs.TokenDtos;
 using RecipesApp.Domain.Entities;
 using RecipesApp.Domain.Entities.Identity;
 using System;

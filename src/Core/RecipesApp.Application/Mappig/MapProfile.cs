@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using RecipesApp.Application.DTOs.EntityDTOs;
+using RecipesApp.Application.DTOs.TokenDtos;
 using RecipesApp.Domain.Entities;
 using RecipesApp.Domain.Entities.Identity;
 using System;
@@ -20,12 +21,15 @@ namespace RecipesApp.Application.Mappig
             CreateMap<Direction, DirectionDto>().ReverseMap();
             CreateMap<Ingredient, IngredientDto>().ReverseMap();
             CreateMap<Recipe, RecipeDto>().ReverseMap();
+            CreateMap<AddRecipeDto, Recipe>().ReverseMap();
             CreateMap<AppUser, AppUserDto>().ReverseMap();
-            
-
-
-
-           
         }
     }
 }
+            
+           
+
+           
+            
+
+

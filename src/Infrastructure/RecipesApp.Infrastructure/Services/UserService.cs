@@ -1,8 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Identity;
-using RecipesApp.Application.DTOs;
 using RecipesApp.Application.DTOs.CustomResponseDTOs;
-using RecipesApp.Application.DTOs.EntityDTOs;
+using RecipesApp.Application.DTOs.TokenDtos;
 using RecipesApp.Application.Interfaces.IService;
 using RecipesApp.Domain.Entities.Identity;
 using System;

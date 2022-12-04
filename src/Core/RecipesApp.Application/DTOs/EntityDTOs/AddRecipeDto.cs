@@ -7,15 +7,13 @@ using System.Threading.Tasks;
 
 namespace RecipesApp.Application.DTOs.EntityDTOs
 {
-    public class RecipeDto
+    public class AddRecipeDto
     {
         public int RecipeId { get; set; }
         public string Title { get; set; }
-        public int CategoryId { get; set; }
-        public List<IngredientDto> Ingredients { get; set; }
+        public CategoryDto Category { get; set; }
+        public IngredientDto Ingredient { get; set; }
         public DirectionDto Direction { get; set; }
+       
     }
-
 }
-   
-

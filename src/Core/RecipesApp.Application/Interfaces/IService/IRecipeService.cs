@@ -12,8 +12,8 @@ namespace RecipesApp.Application.Interfaces.IService
     {
         Task<List<RecipeDto>> GetRecipeAll();
         Task<RecipeDto> GetRecipeById(int id);
-        //Task<Recipe> AddRecipe(RecipeDto recipeDto);
-        //Task<Recipe> UpdateRecipeAsync(int id ,RecipeDto recipeDto);
 
     }
 }
+        
+       

@@ -24,13 +24,6 @@ namespace RecipesApp.Infrastructure.Services
             _recipeRepository = recipeRepository;
             _unitOfWork = unitOfWork;
         }
-
-        //public async Task<Recipe> AddRecipe(RecipeDto recipeDto)
-        //{
-            
-
-        //}
-
         public async Task<List<RecipeDto>> GetRecipeAll()
         {
 
@@ -68,7 +61,6 @@ namespace RecipesApp.Infrastructure.Services
             return query;
 
         }
-
         public async Task<RecipeDto> GetRecipeById(int id)
         {
             var result = await _recipeRepository.GetAllAsync()
@@ -103,37 +95,14 @@ namespace RecipesApp.Infrastructure.Services
             return recipeDto;
         }
 
-        //public async Task<Recipe> UpdateRecipeAsync(RecipeDto recipeDto)
-        //{
-        //   var newRecipe=await _recipeRepository.
+       
 
 
-        //    newRecipe.Title=recipeDto.Title;
-            
-        //    newRecipe.Categories= (from category in recipeDto.Categories
-        //                           select new Category()
-        //                           {
-        //                               CategoryName= category.CategoryName,
-        //                           }).ToList();
-        //    newRecipe.Ingredients = (from ingredient in recipeDto.Ingredients
-        //                             select new Ingredient()
-        //                             {
-        //                                 Name = ingredient.Name,
-        //                                 Amount = new Amount()
-        //                                 {
-        //                                     Quantity = ingredient.Amount.Quantity,
-        //                                     Unit = ingredient.Amount.Unit
-        //                                 }
-        //                             }).ToList();
-        //    newRecipe.Direction = new Direction()
-        //    {
-        //        Step = recipeDto.Direction.Step,
-        //    };
 
-        //     _recipeRepository.Update(newRecipe);
-        //    _unitOfWork.Commit();
-        //    return newRecipe;
-        //}
+       
+
+
+        
     }
 }
 

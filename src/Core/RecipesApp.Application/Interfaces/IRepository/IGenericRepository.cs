@@ -19,7 +19,7 @@ namespace RecipesApp.Application.Interfaces.IRepository
 
         Task<bool> AnyAsync(Expression<Func<TEntity, bool>> expression);
 
-        Task AddAsync(TEntity entity);
+        Task<TEntity> AddAsync(TEntity entity);
 
         Task AddRangeAsync(IQueryable<TEntity> entities);
 

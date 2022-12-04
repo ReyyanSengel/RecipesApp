@@ -18,7 +18,7 @@ namespace RecipesApp.Domain.EntityTypeBuilder
                  .HasColumnType("nvarchar")
                  .HasMaxLength(1050);
 
-
         }
     }
 }
+

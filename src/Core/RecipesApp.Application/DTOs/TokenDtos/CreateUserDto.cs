@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipesApp.Application.DTOs.EntityDTOs
+namespace RecipesApp.Application.DTOs.TokenDtos
 {
-    public class AppUserDto
+    public class CreateUserDto
     {
-        public string Id { get; set; }
         public string UserName { get; set; }
         public string Email { get; set; }
+        public string Password { get; set; }
     }
 }

@@ -1,8 +1,8 @@
 ﻿using Azure;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using RecipesApp.Application.DTOs;
 using RecipesApp.Application.DTOs.CustomResponseDTOs;
+using RecipesApp.Application.DTOs.TokenDtos;
 using RecipesApp.Application.Interfaces.IRepository;
 using RecipesApp.Application.Interfaces.IService;
 using RecipesApp.Application.Interfaces.IUnitOfWorks;
@@ -98,6 +98,6 @@ namespace RecipesApp.Infrastructure.Services
             return ResponseDto<NoContentDto>.Success(200);
         }
 
-
     }
 }
+
